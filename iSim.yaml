@@ -29,3 +29,6 @@ instances:
 
   volume5:
     <<: *v4
+    
+  volume6:
+    <<: *v4
