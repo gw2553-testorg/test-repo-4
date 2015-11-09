@@ -29,3 +29,8 @@ instances:
     
   volume6:
     <<: *v4
+  
+  volume7:
+    <<: *v4
+    dataCenter: HO
+    
