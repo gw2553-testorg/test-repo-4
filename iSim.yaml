@@ -32,5 +32,5 @@ instances:
   
   volume7:
     <<: *v4
-    dataCenter: HO
+    dataCenter: RO
     
