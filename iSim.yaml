@@ -44,7 +44,7 @@ instances:
     size: 100                # [ Size in GB ]
     backup:               # [ localSnap (default) or snapVault (snap to opposing DC) or snapMirror (mirror to opposing DC)]
     snapMirrorFreq:      # [ 15min, 1hr, 4hr, 8hr, 12hr, 24hr (default) ]
-    snapMirrorDest:       # [ (default is opposing datacenter) or GL or RO or other (specify)
+    snapMirrorDest: GL      # [ (default is opposing datacenter) or GL or RO or other (specify)
     
   nas2:
     <<: *nas1
