@@ -34,9 +34,8 @@ instances:
     dataCenter: RO
     size: 1000
     
-  nas1:
+  nas1: &nas1
     eSHS: is_storage_nas
-    shareName: nas_share_name_1 
     dataCenter: GL          # [ GL | RO | Description (other) ]
     envType:  prod            # [ prod or nonprod ]
     networkArea:          # [ MPN (default) | DMZ ]
@@ -46,3 +45,9 @@ instances:
     backup:               # [ localSnap (default) or snapVault (snap to opposing DC) or snapMirror (mirror to opposing DC)]
     snapMirrorFreq:      # [ 15min, 1hr, 4hr, 8hr, 12hr, 24hr (default) ]
     snapMirrorDest:       # [ (default is opposing datacenter) or GL or RO or other (specify)
+    
+  nas2:
+    <<: *nas1
+    size: 300
+    backup: snapMirror
+    
