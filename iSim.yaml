@@ -49,5 +49,6 @@ instances:
   nas2:
     <<: *nas1
     size: 300
+    tier: gold
     backup: snapMirror
     
