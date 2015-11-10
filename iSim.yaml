@@ -36,7 +36,7 @@ instances:
     
   nas1:
     eSHS: is_storage_nas
-    shareName:  
+    shareName: nas_share_name_1 
     dataCenter: GL          # [ GL | RO | Description (other) ]
     envType:  prod            # [ prod or nonprod ]
     networkArea:          # [ MPN (default) | DMZ ]
