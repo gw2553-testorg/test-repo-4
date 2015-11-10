@@ -13,7 +13,7 @@ instances:
     envType: prod             # [ prod or nonprod ]
     useCase: genera      # [ general (default) | generalArchive | ESX | VERITAS | SPOD | OPOD | OPODBackup ]
     size:  100               # [ Size in GB ]
-
+ 
   volume4:  &v4        
     eSHS: is_storage_san       
     dataCenter: GL     # [ GL | RO | Description (other) ]
