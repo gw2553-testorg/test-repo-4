@@ -33,4 +33,6 @@ instances:
   volume7:
     <<: *v4
     dataCenter: RO
+    size: 1000
+    
     
