@@ -34,4 +34,15 @@ instances:
     dataCenter: RO
     size: 1000
     
-    
+  nas1:
+    eSHS: is.storage.nas
+    dataCenter: GL          # [ GL | RO | Description (other) ]
+    envType:  prod            # [ prod or nonprod ]
+    networkArea:          # [ MPN (default) | DMZ ]
+    clientOS: UNIX            # [ WIN or UNIX or BOTH ] 
+    tier:                 # [ silver (default) | gold | platinum ]
+    size: 100                # [ Size in GB ]
+    backup:               # [ localSnap (default) or snapVault (snap to opposing DC) or snapMirror (mirror to opposing DC)]
+    snapMirrorFreq:       # [ 15min, 1hr, 4hr, 8hr, 12hr, 24hr (default) ]
+    snapMirrorDest:       # [ (default is opposing datacenter) or GL or RO or other (specify)
+    custom:               # [ optional - freeform text.  If you specify custom expect additional delay 
