@@ -35,7 +35,7 @@ instances:
     size: 1000
     
   nas1:
-    eSHS: is.storage.nas
+    eSHS: is_storage_nas
     dataCenter: GL          # [ GL | RO | Description (other) ]
     envType:  prod            # [ prod or nonprod ]
     networkArea:          # [ MPN (default) | DMZ ]
