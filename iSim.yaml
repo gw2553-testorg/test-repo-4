@@ -129,7 +129,7 @@ instances:
     ## OR ##
     # Proposed - puppetClasses:      # Puppet classes define security settings - not just restricted to security purposes
   
-    appFuctionType: interactive    # [ interactive | batch ]
+    appFunctionType: interactive    # [ interactive | batch ]
     appName:  myApp          # [ Name of Application ]
     businessUnit: isg      # [ e.g. ISG-BIA]
     eccP1Restore: n      # [yes|no]
