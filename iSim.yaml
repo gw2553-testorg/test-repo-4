@@ -90,7 +90,7 @@ instances:
     eSHS: is_server_linux.vm
     size: 4/24                # [ 2/2 2/4 2/6 2/8 2/16 4/8 4/16 4/24]
     bim:  rhel5Base                # [ rhel5Base | rhel6Base ] 
-    dataCenter:   GL        # [ GL | RO | Description (other) ]
+    dataCenter:   GL        # [ GL | RO | Description (other) ]   
     network_area:         # [ MPN | DMZ-INET | DMZ-EXNET | DMZ-PCI | Other (Description) ]
     appVolSize: 100       # Standard is 100 can be increased
 
