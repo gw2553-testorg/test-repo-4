@@ -92,7 +92,7 @@ instances:
     bim:  rhel5Base                # [ rhel5Base | rhel6Base ] 
     dataCenter:   GL        # [ GL | RO | Description (other) ]   
     network_area:         # [ MPN | DMZ-INET | DMZ-EXNET | DMZ-PCI | Other (Description) ]
-    appVolSize: 100       # Standard is 100 can be increased
+    appVolSize: 150       # Standard is 100 can be increased
 
 #### Final details TBD - no verification of this parameter included yet ####
     atoPackages:          # Optional.  Any unrecognized packages will be assumed to be custom requests
