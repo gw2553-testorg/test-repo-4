@@ -61,7 +61,7 @@ instances:
     bim:  2008SP2WebApp                # [ 2008SP2Base|2008SP2WebApp|2008R2Base|2008R2WebApp|2012R2Base|2012R2WebApp ] 
 
     appDrives:
-      d: 75               # [ Standard is 75, can be increased ]
+      d: 100               # [ Standard is 75, can be increased ]
       e: 500              # [ Optional Size .... add as many drives as necessary.  NOT a:, b:, or c: ]
       f: 10
       
