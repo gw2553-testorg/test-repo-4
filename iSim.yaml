@@ -63,7 +63,7 @@ instances:
     appDrives:
       d: 75               # [ Standard is 75, can be increased ]
       e: 500              # [ Optional Size .... add as many drives as necessary.  NOT a:, b:, or c: ]
-      f:
+      f: 10
       
     localAdmins:  myLocalAdminsGroup      # Local adimins group
   
