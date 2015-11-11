@@ -85,4 +85,58 @@ instances:
     recoveryTier: 2      # [0-9] 
     priContact: contact1        # [email contact group] 
     secContact: contact2        # [email contact group]  
+    
+  linuxvm1:
+    eSHS: is_server_linux.vm
+    size: 4/24                # [ 2/2 2/4 2/6 2/8 2/16 4/8 4/16 4/24]
+    bim:  rhel5Base                # [ rhel5Base | rhel6Base ] 
+    dataCenter:   GL        # [ GL | RO | Description (other) ]
+    network_area:         # [ MPN | DMZ-INET | DMZ-EXNET | DMZ-PCI | Other (Description) ]
+    appVolSize: 100       # Standard is 100 can be increased
+
+#### Final details TBD - no verification of this parameter included yet ####
+    atoPackages:          # Optional.  Any unrecognized packages will be assumed to be custom requests
+      - oracle_client_11Gr2
+      - db2_client
+    
+    keepApartFrom:        # Optional - affinity - (internal iSim ref, not real server hostname)
+  
+    maintWindow: 
+      day:  mon            #[mon,tue,wed,thu,fri,sat,sun]
+      week: 1            #[1|2|3|4]
+      window: '0600'          #[0200|0600|1000|1400|1800|2200] 
+  
+    #### Security arrangements TBD - Donnie Custer ####
+    #securityParams:     # Path to Params File
+  
+    ## OR ##
+    #security:
+    #  netGroups:
+    #    - myNetGroup1
+    #    - myNetGroup2
+    #  groups:
+    #    - group1
+    #    - group2
+    #  sugars:
+    #    - opods
+    #    - was
+    #  appids:
+    #    myAppid:
+    #      surrogateGroups:
+    #        - group1
+    #        - group2
+    
+    ## OR ##
+    # Proposed - puppetClasses:      # Puppet classes define security settings - not just restricted to security purposes
+  
+    appFuctionType: batch    # [ interactive | batch ]
+    appName:  myApp          # [ Name of Application ]
+    businessUnit: isg      # [ e.g. ISG-BIA]
+    eccP1Restore: n      # [yes|no]
+    envType:  prod          # [prod|tpt|test|etest|dev]
+    operationalHours: '24x7'  # [24x7|9-5|hardware|rogue]
+    managementLevel:  '24x7'  # [24x7|9-5|hardware|rogue]
+    recoveryTier: 2      # [0-9] 
+    priContact: group1        # [email contact group] 
+    secContact: group2        # [email contact group]
      
