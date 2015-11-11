@@ -78,7 +78,7 @@ instances:
     appFunctionType: interactive    # [ interactive | batch ]
     appName:  myApp1          # [ Name of Application ]
     businessUnit: ISG-BIA      # [ e.g. ISG-BIA]
-    eccP1Restore: true     # [true or false]
+    eccP1Restore: tr     # [true or false]
     envType:  prod          # [prod|tpt|test|etest|dev]
     operationalHours: '24x7'  # [24x7|9-5|hardware|rogue]
     managementLevel:  '24x7'  # [24x7|9-5|hardware|rogue]
