@@ -72,10 +72,10 @@ instances:
     
     maintWindow: 
       day: mon             #[mon,tue,wed,thu,fri,sat,sun]
-      window: 0200          #[0200|0600|1000|1400|1800|2200] 
+      window: '0200'          #[0200|0600|1000|1400|1800|2200] 
       SMStype:  prod        # [ prod, staging, earlyAdopter, preprod, test ]
 
-    appFuctionType: interactive    # [ interactive | batch ]
+    appFunctionType: interactive    # [ interactive | batch ]
     appName:  myApp1          # [ Name of Application ]
     businessUnit: ISG-BIA      # [ e.g. ISG-BIA]
     eccP1Restore: no      # [yes|no]
