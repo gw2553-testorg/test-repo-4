@@ -54,3 +54,35 @@ instances:
     tier: gold
     backup: snapMirror
     
+  winvm1:
+    eSHS: is_server_windows_vm
+    size: '2/8'                # [ 2/2 2/4 2/6 2/8 2/16 4/8 4/16 4/24]
+    function: APP            # [ APP | DBS | WEB | etc... ] - (Defatult APP)
+    bim:  2008SP2WebApp                # [ 2008SP2Base|2008SP2WebApp|2008R2Base|2008R2WebApp|2012R2Base|2012R2WebApp ] 
+
+    appDrives:
+      d: 75               # [ Standard is 75, can be increased ]
+      e: 500              # [ Optional Size .... add as many drives as necessary.  NOT a:, b:, or c: ]
+      f: 100
+      
+    localAdmins:  myLocalAdminsGroup      # Local adimins group
+  
+    dataCenter: RO          # [ GL | RO | Description (other) ]
+    networkArea:         # [ MPN (default) | DMZ-INET | DMZ-EXNET | DMZ-PCI | Other (Description) ]
+    
+    maintWindow: 
+      day: mon             #[mon,tue,wed,thu,fri,sat,sun]
+      window: 0200          #[0200|0600|1000|1400|1800|2200] 
+      SMStype:  prod        # [ prod, staging, earlyAdopter, preprod, test ]
+
+    appFuctionType: interactive    # [ interactive | batch ]
+    appName:  myApp1          # [ Name of Application ]
+    businessUnit: ISG-BIA      # [ e.g. ISG-BIA]
+    eccP1Restore: no      # [yes|no]
+    envType:  prod          # [prod|tpt|test|etest|dev]
+    operationalHours: '24x7'  # [24x7|9-5|hardware|rogue]
+    managementLevel:  '24x7'  # [24x7|9-5|hardware|rogue]
+    recoveryTier: 2      # [0-9] 
+    priContact: contact1        # [email contact group] 
+    secContact: contact2        # [email contact group] 
+    
