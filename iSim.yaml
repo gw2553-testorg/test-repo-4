@@ -140,6 +140,6 @@ instances:
     priContact: group1        # [email contact group] 
     secContact: group2        # [email contact group]
      
-  linvm2:
+  linuxvm2:
     <<: *linVm1
     
