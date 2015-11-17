@@ -141,5 +141,5 @@ instances:
     secContact: group2        # [email contact group]
      
   linvm2:
-    <<: linVm1
+    <<: *linVm1
     
