@@ -88,7 +88,7 @@ instances:
     
   linuxvm1: &linVm1
     eSHS: is_server_linux_vm
-    size: 4/24                # [ 2/2 2/4 2/6 2/8 2/16 4/8 4/16 4/24]
+    size: '4/24'                # [ 2/2 2/4 2/6 2/8 2/16 4/8 4/16 4/24]
     bim:  rhel5Base                # [ rhel5Base | rhel6Base ] 
     dataCenter:   GL        # [ GL | RO | Description (other) ]   
     networkArea: DMZ-INET  # [ MPN | DMZ-INET | DMZ-EXNET | DMZ-PCI | Other (Description) ]
